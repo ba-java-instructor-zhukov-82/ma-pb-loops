@@ -63,11 +63,23 @@ function forEachLoopExample() {
     for (var index in array) {
         var separator = index == array.length - 1 ? '' : ', ';
         result += array[index] + separator;
-        if ((index + 1) % 5 == 0) {
+        if (index % 5 == 0) {
             alert('test');
             result += '<br/>';
         }
     }
 
     print(result);
+}
+
+function findMinInArray() {
+
+    var array = [2, 8, -30, 7, 4, -10];
+
+    var min = array[0];
+    for(var index in array) {
+        min = min < array[index] ? min : array[index];
+    }
+
+    print('min value in array is: ' + min);
 }
