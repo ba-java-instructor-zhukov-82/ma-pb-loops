@@ -63,10 +63,6 @@ function forEachLoopExample() {
     for (var index in array) {
         var separator = index == array.length - 1 ? '' : ', ';
         result += array[index] + separator;
-        if (index % 5 == 0) {
-            alert('test');
-            result += '<br/>';
-        }
     }
 
     print(result);
